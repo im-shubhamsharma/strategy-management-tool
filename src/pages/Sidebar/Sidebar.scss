@@ -1,0 +1,31 @@
+@use "../../styles/mixin";
+@use "../../styles/variable";
+
+.sidebar {
+  background-color: rgb(34, 34, 34);
+  height: 100vh;
+  width: 300px !important;
+  transition: width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+  color: #fff;
+ 
+  padding: 20px 15px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo{
+    margin-bottom: 3rem;
+    
+    img{
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+  .navlist{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../../styles/variable";
+
+.filter-button {
+  background-color: variable.$bg-gray;
+  border: 1px solid #e6e7eb;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: max-content;
+  min-width: 70px;
+  font-family: inherit;
+  color: #212529;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  img {
+    width: 16px;
+  }
+}

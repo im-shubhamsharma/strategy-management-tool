@@ -1,0 +1,78 @@
+@use "./variable";
+
+@mixin heading1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #222;
+}
+
+@mixin addButton {
+  border: none;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: variable.$bg-yellow;
+  color: #fff;
+}
+
+@mixin filterbox {
+  box-shadow: 0.2rem 0.2rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: none;
+  padding-left: 20px;
+  padding-right: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 25px;
+  width: 100%;
+  height: 88px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@mixin filterbtn {
+  margin: 0 5px;
+  background-color: variable.$bg-gray;
+  border: 1px solid #e6e7eb;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 70px;
+  font-family: inherit;
+  color: #212529;
+  cursor: pointer;
+}
+
+@mixin search {
+  padding: 8px 6px;
+  height: 2.57em;
+  font-size: 14px;
+  font-weight: 400;
+  color: #44423e;
+  border: 0px none;
+  line-height: 1.42857;
+  background-color: #e4eaf2 !important;
+  border-color: #e4eaf2 !important;
+  text-align: left;
+}
+
+@mixin sidebar {
+  background-color: rgb(34, 34, 34);
+  height: 100vh;
+  width: 270px !important;
+  transition: width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+@mixin sidebarAccordion {
+  background: #303030;
+  border-radius: 6px;
+  transition: 0.3s;
+  text-decoration: none;
+}

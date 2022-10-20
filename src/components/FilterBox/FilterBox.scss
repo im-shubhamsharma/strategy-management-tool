@@ -1,0 +1,37 @@
+@use "../../styles/mixin";
+@use "../../styles/variable";
+
+.filterbox {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+
+  button {
+    @include mixin.filterbox;
+
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    img {
+      width: 42px;
+    }
+  }
+
+  .not-started {
+    background-color: variable.$bg-gray;
+  }
+
+  .in-progress {
+    background-color: variable.$bg-blue;
+    color: variable.$text-blue;
+  }
+  .at-risk {
+    background-color: variable.$bg-red;
+    color: variable.$text-red;
+  }
+  .completed {
+    background-color: variable.$bg-green;
+    color: variable.$text-green;
+  }
+}

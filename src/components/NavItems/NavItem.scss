@@ -1,0 +1,45 @@
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.7rem 0.2rem 0.7rem 0.7rem;
+  transition: 0.3s;
+  height: 2.2rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  .icon {
+    flex: 1;
+    img{
+      width: 20px;
+    }
+  }
+
+  .name {
+    flex: 4;
+    margin-left: 0.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .arrow {
+    flex: 1;
+    transform: translateY(-4px);
+  }
+}
+
+.active {
+  background: #303030;
+  border-radius: 6px;
+  height: auto;
+  overflow: visible;
+  transition: 0.3s;
+}
