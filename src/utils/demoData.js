@@ -1,3 +1,7 @@
+import { HiChevronDoubleUp } from "react-icons/hi";
+import { FaChevronUp } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
+
 export const demoData = [
   {
     type: "green",
@@ -6,10 +10,18 @@ export const demoData = [
     goal: "Setting up new working environment",
     fromDate: "09/14/2022",
     dueDate: "09/14/2022",
-    priority: "urgent",
-    status: "completed",
+    priority: {
+      Icon: HiChevronDoubleUp,
+      type: "Urgent",
+      color: "#30A9D9",
+    },
+    status: {
+      type: "completed",
+      bgColor: "rgb(238, 255, 248)",
+      color: "rgb(85, 181, 131)",
+    },
     assigned: {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/thumb/men/75.jpg",
       name: "Michael Dowlanski",
     },
     score: {
@@ -24,10 +36,19 @@ export const demoData = [
     desc: "Lorem ipsum dolor sit amet, consectetur.",
     fromDate: "09/18/2022",
     dueDate: "09/18/2022",
-    priority: "High",
-    status: "in progress",
+    priority: {
+      Icon: FaChevronUp,
+      type: "High",
+      bgColor: "rgb(238, 255, 248)",
+      color: "rgb(85, 181, 131)",
+    },
+    status: {
+      type: "In Progress",
+      bgColor: "rgb(240, 248, 255)",
+      color: "rgb(29, 89, 178)",
+    },
     assigned: {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/thumb/men/81.jpg",
       name: "Steven Gerard",
     },
     score: {
@@ -42,10 +63,18 @@ export const demoData = [
     desc: "Lorem ipsum dolor sit amet, consectetur.",
     fromDate: "09/24/2022",
     dueDate: "09/24/2022",
-    priority: "High",
-    status: "at risk",
+    priority: {
+      Icon: FaChevronUp,
+      type: "High",
+      color: "rgb(85, 181, 131)",
+    },
+    status: {
+      type: "At Risk",
+      bgColor: "rgb(255, 240, 240)",
+      color: "rgb(178, 41, 41)",
+    },
     assigned: {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/thumb/men/84.jpg",
       name: "Dusko Dugousko",
     },
     score: {
@@ -60,10 +89,18 @@ export const demoData = [
     desc: "Lorem ipsum dolor sit amet, consectetur.",
     fromDate: "09/29/2022",
     dueDate: "09/29/2022",
-    priority: "Medium",
-    status: "draft",
+    priority: {
+      Icon: FaCircle,
+      type: "Medium",
+      color: "rgb(255, 158, 25)",
+    },
+    status: {
+      type: "Draft",
+      bgColor: "rgb(240, 241, 242)",
+      color: "rgb(48, 48, 48)",
+    },
     assigned: {
-      avatar: "",
+      avatar: "https://randomuser.me/api/portraits/thumb/women/75.jpg",
       name: "Mila Mitrovic",
     },
     score: {

@@ -1,24 +1,42 @@
 @use "../../styles/variable";
 
+.priority {
+  display: flex;
+  align-items: center;
 
-.urgent{
-   color: #30A9D9;
-   font-weight: 700;
-   font-size: 1.2rem;
-   display: flex;
-   align-items: center;
+  p {
+    font-weight: 600;
+  }
 
-   span{
-    background-color: #30A9D9;
+  span {
     color: #fff;
-    text-align: center;
-    padding: 1px 2px 0 2px;
+    padding: 1px 3px 1px 3px;
     border-radius: 4px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 900;
     transform: translateX(-5px);
 
-    &>*{
-        transform: translateY(1px);
+    & > * {
+      transform: translateY(1px);
     }
-   }
+  }
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.score {
+  position: relative;
+  height: 10px;
+  width: 80px;
+  border-radius: 10px;
+  margin-top: 6px;
+  background-color: variable.$bg-gray;
 }

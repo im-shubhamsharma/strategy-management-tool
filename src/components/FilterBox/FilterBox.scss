@@ -1,37 +1,24 @@
-@use "../../styles/mixin";
-@use "../../styles/variable";
-
 .filterbox {
   width: 100%;
+  box-shadow: 0.2rem 0.2rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: none;
+  border-radius: 4px;
   display: flex;
-  gap: 1.2rem;
+  justify-content: space-between;
+  padding: 10px 20px 10px 25px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
 
-  button {
-    @include mixin.filterbox;
-
-    h1 {
-      font-size: 2.1rem;
-    }
-
-    img {
-      width: 42px;
-    }
+  h1 {
+    font-size: 2.1rem;
   }
 
-  .not-started {
-    background-color: variable.$bg-gray;
+  p{
+    font-weight: 600;
   }
 
-  .in-progress {
-    background-color: variable.$bg-blue;
-    color: variable.$text-blue;
-  }
-  .at-risk {
-    background-color: variable.$bg-red;
-    color: variable.$text-red;
-  }
-  .completed {
-    background-color: variable.$bg-green;
-    color: variable.$text-green;
+  img {
+    width: 42px;
   }
 }

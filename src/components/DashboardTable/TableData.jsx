@@ -1,6 +1,7 @@
 import React from "react";
 import greenIcon from "../../assets/greenCheckmark.svg";
 import yellowIcon from "../../assets/yellowStairs.png";
+import { Priority, Score, Status } from "../PriorityAndStatus/PriorityAndStatus";
 
 const TableData = (props) => {
   const {
@@ -23,6 +24,7 @@ const TableData = (props) => {
     icon = yellowIcon;
   }
 
+
   return (
     <tr>
       <td>
@@ -35,14 +37,23 @@ const TableData = (props) => {
       <td>{goal}</td>
       <td>{fromDate}</td>
       <td>{dueDate}</td>
-      <td>{priority}</td>
-      <td>{status}</td>
-      <td class="assigned">
-        <span>{assigned.name.slice(0,1)}</span>
+      <td>
+        <Priority variant={priority} />
+      </td>
+      <td>
+        <Status variant={status} />
+      </td>
+      <td className="assigned">
+        <span>
+          <img src={assigned.avatar} />
+        </span>
         <span>{assigned.name}</span>
       </td>
       <td>
-        <strong>{score.curr}</strong>/{score.total}
+        <span>
+          <strong>{score.curr}</strong>/{score.total}
+        </span>
+        <Score score={score}/>
       </td>
       <td>---</td>
     </tr>

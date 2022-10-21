@@ -2,7 +2,6 @@ import React from "react";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Sidebar from "./pages/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
-import { Urgent } from "./components/PriorityAndStatus/PriorityAndStatus";
 import "./App.scss";
 
 const App = () => {

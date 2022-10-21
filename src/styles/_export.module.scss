@@ -1,0 +1,17 @@
+@use "./variable";
+
+:export {
+  bgDark: variable.$bg-dark;
+  bgLight: variable.$bg-light;
+  bgYellow: variable.$bg-yellow;
+  bgGreen: variable.$bg-green;
+  bgPurple: variable.$bg-purple;
+  bgRed: variable.$bg-red;
+  bgBlue: variable.$bg-blue;
+  bgGray: variable.$bg-gray;
+
+  textBlue: variable.$text-blue;
+  textRed: variable.$text-red;
+  textGreen: variable.$text-green;
+  textGray: variable.$text-gray;
+}
