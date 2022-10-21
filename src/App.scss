@@ -15,7 +15,17 @@ body {
 .app {
   display: flex;
 
+  .sidebar-container {
+    flex-basis: 15%;
+    // padding: 0rem 2rem;
+  }
+
   .main-container {
     width: 100%;
+    position: relative;
+    height: 100vh;
+    flex-basis: 85%;
+    padding: 1rem 0;
+    overflow-y: auto;
   }
 }
