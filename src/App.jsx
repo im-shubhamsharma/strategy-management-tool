@@ -13,9 +13,9 @@ const App = () => {
       </div>
       <div className="main-container">
         <Header />
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        {/* <div style={{ display: "flex", justifyContent: "center" }}>
           <Urgent />
-        </div>
+        </div> */}
         <Dashboard />
       </div>
     </div>
